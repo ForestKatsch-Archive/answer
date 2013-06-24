@@ -1,0 +1,22 @@
+{
+    "name":"Answer",
+    "description":"A simple answer engine",
+    "version":"0.0.1",
+    "manifest_version":2,
+    "app":{
+	"background": {
+	    "scripts": [
+		"assets/scripts/bg.js"
+	    ]
+	}
+    },
+    "permissions": [
+	{
+	    "socket": [
+		"udp-send-to:*:3965",
+		"udp-bind:*:3151"
+	    ]
+	}
+  ]
+
+}

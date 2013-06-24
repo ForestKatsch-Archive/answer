@@ -1,0 +1,14 @@
+
+@import "reset.css";
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    border: 1px solid #fff;
+    background-color: #000;
+    box-sizing: border-box;
+    font-family: monospace;
+}
