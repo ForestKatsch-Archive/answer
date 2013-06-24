@@ -46,7 +46,4 @@ function done() {
     var time=new Date().getTime()-module_start_time;
     time=(time/1000).toFixed(3);
     console.log("Loaded "+module_number+" module"+s(module_number)+" in "+time+" second"+s(time));
-    var d=new Dum("10 20 +");
-    d.go();
-    console.log(d);
 }

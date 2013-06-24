@@ -1,0 +1,26 @@
+
+@import "card.css";
+
+#cards {
+    box-sizing: border-box;
+    max-height: 100%;
+    margin-top: 3em;
+    padding-top: 1em;
+    padding-bottom: 6em;
+    margin-left: 2em;
+    padding-right: 1em;
+    overflow-y: auto;
+    width: 41em;
+}
+
+#cards::-webkit-scrollbar {
+    width: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-bottom: 2px solid #bbb;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+}

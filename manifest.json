@@ -6,7 +6,6 @@
     "app":{
 	"background": {
 	    "scripts": [
-		"assets/scripts/dum.js",
 		"assets/scripts/search-bg.js",
 		"assets/scripts/bg.js"
 	    ]

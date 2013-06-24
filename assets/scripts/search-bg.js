@@ -13,9 +13,7 @@ var Search=function(query,callback) {
 	for(var x in sources) {
 	    var s=sources[x];
 	    if((s.func) && (s.func.qualify)) {
-		var d=new Dum(s.func.qualify);
-		d.go();
-		results.push(d);
+		results.push(s.func.qualify(query));
 	    }
 	}
 	this.callback(results);

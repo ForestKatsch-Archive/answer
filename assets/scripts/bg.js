@@ -3,15 +3,18 @@ sources["test"]={
     "name":"Testing 123",
     "author":"Forest Ka",
     "func":{
-	"qualify":"false",
-	"search":"null"
+	"qualify":function(query) {
+	    return null;
+	},
+	"search":function(query) {
+
+	}
     }
 };
 
 var searcher;
 
 function search(query,callback) {
-    return;
     if(searcher)
 	searcher.stop();
     searcher=new Search(query,callback);

@@ -1,6 +1,7 @@
 
 @import "reset.css";
 @import "header.css";
+@import "cards.css";
 
 html, body {
     height: 100%;
@@ -8,6 +9,7 @@ html, body {
 }
 
 html {
+    background-color: #ddd;
     box-sizing: border-box;
     font-family: monospace;
 }

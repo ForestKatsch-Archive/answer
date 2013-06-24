@@ -1,20 +1,25 @@
 
 #h {
-    background-color: #eee;
-    border-bottom: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 2px solid #bbb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #query {
-    background-color: transparent;
+    box-sizing: border-box;
+    background-color: #fff;
     border: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid #bbb;
+    height: 3em;
     margin-left: 2em;
     margin-bottom: -2px;
-    min-width: 10em;
-    max-width: 50em;
     outline: none;
     padding: 0.5em 1em;
-    width: 50%;
+    width: 39em;
     -webkit-transition: border-color 0.1s ease;
 }
 
