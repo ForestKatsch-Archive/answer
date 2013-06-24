@@ -8,8 +8,6 @@ html, body {
 }
 
 html {
-    border: 1px solid #fff;
-    background-color: #000;
     box-sizing: border-box;
     font-family: monospace;
 }

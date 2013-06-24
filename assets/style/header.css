@@ -1,1 +1,23 @@
 
+#h {
+    background-color: #eee;
+    border-bottom: 2px solid #ccc;
+}
+
+#query {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-left: 2em;
+    margin-bottom: -2px;
+    min-width: 10em;
+    max-width: 50em;
+    outline: none;
+    padding: 0.5em 1em;
+    width: 50%;
+    -webkit-transition: border-color 0.1s ease;
+}
+
+#query:focus {
+    border-color: #38f;
+}

@@ -11,12 +11,6 @@
 	}
     },
     "permissions": [
-	{
-	    "socket": [
-		"udp-send-to:*:3965",
-		"udp-bind:*:3151"
-	    ]
-	}
-  ]
-
+	"http://*/*"
+    ]
 }

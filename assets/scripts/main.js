@@ -1,7 +1,7 @@
 
 var VERSION=[0,0,1];
 
-var modules=["main","ui","prop","fgfs","socket"];
+var modules=["main","ui","prop","search"];
 var module_number=0;
 var module_start_time;
 
@@ -32,8 +32,7 @@ function start() {
     init();
     setTimeout(function() {
 	prop_init();
-	socket_init();
-	fgfs_init();
+	search_init();
 	ui_init();
 	loaded("main");
     },00);
@@ -47,12 +46,4 @@ function done() {
     var time=new Date().getTime()-module_start_time;
     time=(time/1000).toFixed(3);
     console.log("Loaded "+module_number+" module"+s(module_number)+" in "+time+" second"+s(time))
-    update();
-}
-
-function update() {
-    requestAnimationFrame(update);
-    socket_update();
-    fgfs_update();
-    ui_update();
 }
