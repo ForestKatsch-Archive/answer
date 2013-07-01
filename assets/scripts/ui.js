@@ -21,12 +21,18 @@ var Card=function(id,card) {
 	    console.log("Unknown type '"+c.type+"'");
 	    return null;
 	}
+	if(c.style != undefined) {
+	    for(var i=0;i<c.style.length;i++) {
+		html.addClass("card-layout-style-"+c.style[i]);
+	    }
+	}
 	return html;
     };
     this.gen_html=function() {
 	var c=this.gen(this.contents);
 	if(c == null)
 	    return;
+	this.html.append("<header class='title'>"+this.contents.title+"</header>");
 	this.html.append(c);
     };
     this.show=function() {

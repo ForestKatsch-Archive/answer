@@ -1,1 +1,20 @@
 
+.card {
+    font-size: 80%;
+}
+
+.card-layout-direction-horizontal>* {
+    display: inline-block;
+    margin-left: 0.25em;
+    padding-left: 0.25em;
+}
+
+.card-layout-direction-horizontal>:first-child {
+    padding-left: none;
+    margin-left: 0;
+    border-left: none;
+}
+
+.card-layout-style-bold {
+    font-weight: bold;
+}
